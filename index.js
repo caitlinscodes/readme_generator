@@ -26,33 +26,32 @@ inquirer
       name: 'usage',
     },
     {
-      //needs to be a list or choose
       type: 'list',
-      message: 'Describe how to use this program',
+      message: 'Select a license:',
       name: 'license',
-      choices: ['MIT: describe', 'LSAT: describe', 'telekinesis'],
+      choices: ['MIT: Gives users express permissioon to reuse code for any purpose.', 
+      'GNU: A series of software licenses that guarantee end users the freedom to run, study, share and modify the software.', 
+      'Apache License 2.0: Allows commercial use, alterations, and distribution of updated/altered versions of the code.'],
     },
     {
-      //ask if any contributors
-      type: 'confirm',
-      message: 'Would you like a table of contents',
-      name: 'tableofcontents',
-    },
-    {
-      //prompt for contributor names
       type: 'input',
-      message: 'Describe how to use this program',
+      message: 'Please list all project contributors. (If none, please type "none")',
       name: 'contributors',
     },
     {
       type: 'input',
-      message: 'Describe how to use this program',
+      message: 'Describe any project testing information.',
       name: 'tests',
     },
     {
       type: 'input',
-      message: 'Describe how to use this program',
-      name: 'questions',
+      message: 'What is your GitHub profile name?',
+      name: 'questions1',
+    },
+    {
+      type: 'input',
+      message: 'What is your email address?',
+      name: 'questions2',
     },
   ])
 // TODO: Create a function to write README file
@@ -64,7 +63,7 @@ inquirer
       ## Description
       ${response.description}
       
-      ## Table of Contents (figure out how to link these)
+      ## Table of Contents
       * Installation
       * Usage
       * License
@@ -88,18 +87,18 @@ inquirer
       ${response.tests}
       
       ## Questions
-      ${response.questions}
+      For any questions please refer to my GitHub Account:
+      https://github.com/${response.questions1}
+      or email me at:
+      ${response.questions2}
       ---
         `, (err) =>
         err ? console.error(err) : console.log('README file created')
       );
  });
 
-// TODO: Create a function to initialize app
-function init() {}
 
-// Function call to initialize app
-init();
+
 
 
 
