@@ -1,4 +1,4 @@
-# Caitlin Stevenson|README Generator Assignment
+# Caitlin Stevenson | README Generator Assignment
 
 ## Objectives
 
@@ -6,7 +6,9 @@ In this project, I created a program that allows the user to create a new README
 
 ## Video of Project in Use
 
-![Video of project in use](https://drive.google.com/file/d/12t-_046L51kX2fdCzBY-8WAsYutmhAcJ/view?usp=sharing)
+[Video of project in use](https://drive.google.com/file/d/12t-_046L51kX2fdCzBY-8WAsYutmhAcJ/view?usp=sharing)
+
+![ ](./images/readme2_image.png)
 
 ## GitHub Link
 
